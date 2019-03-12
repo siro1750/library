@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="Windows-31J" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+    <f:view>
+        <h:head>
+            <meta http-equiv="Content-Type" content="text/html; charset=Windows-31J" />
+            <title>自分の図書館</title>
+        </h:head>
+        <h:body>
+            <h:form id="Mune">
+                <div id="bookTitleSearch">
+                    <span id="userIdLabel">タイトル</span>
+                    <span id="userIdInput">
+                        <h:inputText id="bookTitleSerach" value="#{indexPage.userId}" label="ユーザID" />
+                    </span>
+                </div>
+                <div id="passwordRow">
+                    <span id="passwordLabel">パスワード</span>
+                    <span id="passwordInput">
+                        <h:outputText id="password" value="#{indexPage.password}"  label="パスワード" />
+                    </span>
+                </div>
+            </h:form>
+        </h:body>
+    </f:view>
+</html>
